@@ -126,7 +126,7 @@ class TreeStore {
     getAllParents(id) {
         const array: Item[] = []
         const item: Item = this.map.get(id)
-        const items: Map<string|number, Item> = new Map (this.map)
+        const items = new Map (this.map)
 
         array.push(item)
 

@@ -128,8 +128,6 @@ class TreeStore {
         const item: Item = this.map.get(id)
         const items = new Map (this.map)
 
-        array.push(item)
-
         const getParent = (n: string|number) => {
             for (let value of items.values()) {
                 if(value.id === n) {
